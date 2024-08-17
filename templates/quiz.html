@@ -1,0 +1,29 @@
+{% extends "layout.html" %}
+
+
+
+{% block content %}
+<head>
+
+<script type="text/javascript" src="{{ url_for('static', filename = 'welcome.js') }}"></script>
+<link rel="stylesheet" href="{{url_for('static', filename='welcome.css')}}">
+
+<script>
+
+</script>
+
+</head>
+
+
+   
+<img src="/static/quiztime.png" class="quizimg">
+
+<div class="quizbtn1">
+    <a class="btn" id="learning-btn" href="/" role="button">Learn Again</a>
+</div>
+
+<div class="quizbtn2">
+    <a class="btn" id="learning-btn" href="/actualquiz" role="button">Quiz</a>
+</div>
+
+{% endblock %}

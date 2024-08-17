@@ -1,0 +1,15 @@
+{% extends "layout.html" %}
+
+{% block content %}
+
+    <script type="text/javascript" src="{{ url_for('static', filename = 'homepage.js') }}"></script>
+        
+    <script>
+        let data = {{data|tojson}} 
+        console.log(data)
+    </script>
+
+    <p class="homepagetext">Most Popular Tech Companies!</p>
+    <div id="element"></div>
+
+{% endblock %}

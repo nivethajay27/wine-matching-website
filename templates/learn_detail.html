@@ -1,0 +1,57 @@
+{% extends "layout.html" %}
+
+
+
+{% block content %}
+<head>
+
+<script>
+
+</script>
+
+</head>
+
+<h3>General rule:{{data['rule']}}</h3>
+
+{% if data %}
+
+
+{%if data['meals']%}
+<h5 class="text-center">Pairings</h5>
+    <div class="row mt-5">
+        {% for meal in data['meals']%}
+        
+            <div class="col-md-4 text-center">
+                {{meal['name']}}
+                {{meal['img']}}
+            </div>
+        
+        {% endfor %}
+    </div>
+{% endif %}
+
+<div class="row">
+
+    {% if data['id']|int <= 2%}
+    <div class="col-md-6">
+        <a href="/learn/{{data['category']}}/{{data['id']|int-1}}"><button class="btn btn-outline-dark">Prev</button></a>
+    </div>
+
+    {%endif%}
+
+    {% if categories_learnt|length > 2 %}
+    <div class="col-md-6">
+        <a href="/quiz"><button style="float: right;" class="btn btn-outline-dark">Take a quiz</button></a>
+    </div>
+
+    {%else%}
+    <div class="col-md-6">
+        <a href="/learn/{{data['category']}}/{{data['id']|int+1}}"><button style="float: right;" class="btn btn-outline-dark">Next</button></a>
+    </div>
+    {%endif %}
+</div>
+
+{%endif%}
+{% endblock %}
+
+

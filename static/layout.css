@@ -1,0 +1,21 @@
+
+.container{
+padding-right: 0px;
+padding-left: 0px;
+
+
+}
+
+.navbar{
+  background-color: rgb(195, 75, 75);
+}
+
+
+.nav-link {
+  color: white;
+  padding: 15px;
+}
+.navbar-expand-lg .navbar-nav .nav-link{
+  padding-right: 25px;
+  padding-left: 20px;
+}

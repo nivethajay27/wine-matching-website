@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+     
+
+<!-- jquery -->
+  <script src="http://code.jquery.com/jquery-3.3.1.min.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.0/jquery-ui.min.js"></script>  
+  <link rel="stylesheet" href="http://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
+
+  <link rel="stylesheet" href="{{url_for('static', filename='layout.css')}}">
+
+  <script>
+    
+
+
+ </script>
+
+    <title>Wine Matching </title>
+  </head>
+  <body>
+    
+
+    
+<nav class="navbar navbar-expand-lg ">
+  <div class="container">
+  
+    
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+      <ul class="navbar-nav mr-auto">
+        
+        <li class="nav-item active">
+            <a class="nav-link" href="/">Home</a>
+        </li>
+     
+    
+        <li class="nav-item active">
+          <a class="nav-link" href="/learn">Learn</a>
+      </li>
+
+        <li class="nav-item active">
+          <a class="nav-link" href="/quiz">Quiz</a>
+      </li>
+     
+ 
+
+
+
+
+
+  </div>
+
+</div>
+</nav>
+    <div id="content" class="container">
+      {% block content %}
+      
+      {% endblock content %}
+  </div>
+
+
+
+  </body>
+</html>

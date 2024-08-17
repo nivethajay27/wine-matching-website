@@ -1,0 +1,17 @@
+{% extends "layout.html" %}
+
+{% block content %}
+<body class="bColor">
+    <script type="text/javascript" src="{{ url_for('static', filename = 'actualquiz.js') }}"></script>
+        
+    <script>
+        let data = {{data|tojson}} 
+        console.log(data)
+    </script>
+
+    <p class="homepagetext">Add Data of companies!</p>
+    <div class="container">
+        
+    </div>
+</body>
+{% endblock %}

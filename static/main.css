@@ -1,0 +1,21 @@
+#hello_div{
+    padding-top:  10px;
+    padding-bottom:  10px;
+    color: greenyellow;
+}
+.searchbarpos {
+    position: absolute;
+    margin-left: 720px;
+    width: 14%;
+    padding: 5px 10px;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+.searchbuttonpos {
+    margin-left: 950px;
+}
+.homepagetext{
+    font-size: 40px;
+    font-weight: 100px;
+}
